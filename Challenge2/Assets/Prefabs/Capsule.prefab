@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5923200267202832614}
   - component: {fileID: 5923200267202832610}
   - component: {fileID: 5923200267202832611}
+  - component: {fileID: 1905128281001271258}
   - component: {fileID: 5923200267202832604}
   m_Layer: 0
   m_Name: Capsule
@@ -111,7 +112,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -135,8 +136,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75f35649b366c3499eb349353eb61e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  player: {fileID: 0}
+  target: {fileID: 8743726607146232723, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
+  mask:
+    serializedVersion: 2
+    m_Bits: 2147483647
+--- !u!114 &1905128281001271258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923200267202832613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703cc7add30ba8849af2b7bf7ed3626c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8743726607146232723, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
+  detectionAngle: 45
+  chase: 0
 --- !u!54 &5923200267202832604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,7 +165,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
