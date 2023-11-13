@@ -50,13 +50,12 @@ public class CharacterMovement : MonoBehaviour
     void Flash()
     {
 
-        if (!light)
+        if (light)
         {
             flash.intensity = 0f;
             light = false;
         }
-
-        if (!light)
+        else if (!light)
         {
             flash.intensity = 10f;
             light = true;
