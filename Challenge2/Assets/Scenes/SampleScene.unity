@@ -293,9 +293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &81088071
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8743726606469937294, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
+  m_PrefabInstance: {fileID: 8743726606570671330}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
