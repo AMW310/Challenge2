@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703cc7add30ba8849af2b7bf7ed3626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8743726607146232723, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
+  player: {fileID: 8743726607146232720, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
   detectionAngle: 45
   chase: 0
 --- !u!54 &5923200267202832604

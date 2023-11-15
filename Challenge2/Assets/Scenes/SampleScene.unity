@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 5923200267202832611, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 167998572}
+      objectReference: {fileID: 1123928392}
     - target: {fileID: 5923200267202832613, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: m_Name
       value: Capsule (1)
@@ -291,40 +291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &81088071
+--- !u!1 &81088071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8743726606469937294, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
   m_PrefabInstance: {fileID: 8743726606570671330}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 81088072}
-  - component: {fileID: 81088076}
-  - component: {fileID: 81088075}
-  - component: {fileID: 81088074}
-  - component: {fileID: 81088073}
-  m_Layer: 0
-  m_Name: Cube (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &81088072
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81088071}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -76.7708, y: 6.0705, z: 28.57}
-  m_LocalScale: {x: 1, y: 22.140854, z: 58.540962}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1362381925}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!208 &81088073
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -404,11 +375,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81088071}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &167998572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8743726606469937294, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
-  m_PrefabInstance: {fileID: 8743726606570671330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &208421967
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,8 +893,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848028047}
-  m_LocalRotation: {x: 0.01082046, y: -0.000000034096182, z: 0.0000000030373752, w: 0.9999415}
-  m_LocalPosition: {x: -0.00000019101006, y: -0.779482, z: 2.8594584}
+  m_LocalRotation: {x: 0.01082046, y: -0.000000020567358, z: 0.0000000018321927, w: 0.9999415}
+  m_LocalPosition: {x: -0.000000115220296, y: -0.779482, z: 2.8594584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1013,7 +979,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.03900378, y: 0.000000034205158, z: -0.0000000013351464, w: 0.9992391}
+  m_LocalRotation: {x: 0.03900378, y: 0.000000020633092, z: -8.053815e-10, w: 0.9992391}
   m_LocalPosition: {x: 29.25, y: 3.5, z: -29.009998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1492,8 +1458,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113991448}
-  m_LocalRotation: {x: 0.01082046, y: -0.000000034096182, z: 0.0000000030373752, w: 0.9999415}
-  m_LocalPosition: {x: -0.00000019101006, y: -0.779482, z: 2.8594584}
+  m_LocalRotation: {x: 0.01082046, y: -0.000000020567358, z: 0.0000000018321927, w: 0.9999415}
+  m_LocalPosition: {x: -0.000000115220296, y: -0.779482, z: 2.8594584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1525,7 +1491,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117503937}
-  m_LocalRotation: {x: 0.03900378, y: 0.000000034205158, z: -0.0000000013351464, w: 0.9992391}
+  m_LocalRotation: {x: 0.03900378, y: 0.000000020633092, z: -8.053815e-10, w: 0.9992391}
   m_LocalPosition: {x: 29.25, y: 3.5, z: -29.009998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1575,6 +1541,11 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 62606414}
+--- !u!1 &1123928392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8743726607146232723, guid: 81df1a49db1ba5140bfd4096453535b5, type: 3}
+  m_PrefabInstance: {fileID: 8743726606570671330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268474378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1793,6 @@ Transform:
   - {fileID: 1353124519}
   - {fileID: 1501329601}
   - {fileID: 2145756119}
-  - {fileID: 81088072}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1884,7 +1854,7 @@ PrefabInstance:
     - target: {fileID: 5923200267202832611, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 167998572}
+      objectReference: {fileID: 1123928392}
     - target: {fileID: 5923200267202832613, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: m_Name
       value: Capsule (2)
@@ -2377,8 +2347,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684445686}
-  m_LocalRotation: {x: 0.010820437, y: -0.000000036238493, z: 0.0000000032282168, w: 0.9999415}
-  m_LocalPosition: {x: -0.00000019101006, y: -0.779482, z: 2.8594584}
+  m_LocalRotation: {x: 0.010820437, y: -0.00000002270967, z: 0.0000000020230349, w: 0.9999415}
+  m_LocalPosition: {x: -0.000000115220296, y: -0.779482, z: 2.8594584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2690,7 +2660,7 @@ PrefabInstance:
     - target: {fileID: 5923200267202832611, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 167998572}
+      objectReference: {fileID: 1123928392}
     - target: {fileID: 5923200267202832613, guid: bf6633369241aa946af6b45e69cc6a07, type: 3}
       propertyPath: m_Name
       value: Capsule
