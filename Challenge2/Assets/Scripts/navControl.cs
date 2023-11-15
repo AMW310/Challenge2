@@ -7,6 +7,7 @@ public class navControl : MonoBehaviour
 {
     public GameObject target;
     private NavMeshAgent agent;
+    private Rigidbody rb;
     private bool isWalking;
     private Vector3 origin;
     private Vector3 direction;
@@ -14,11 +15,13 @@ public class navControl : MonoBehaviour
     private EnemyDetection look;
 
     private float hitDistance;
+    private bool awake;
     public LayerMask mask;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
         move = target.GetComponent<CharacterMovement>();
         look = this.GetComponent<EnemyDetection>();
     }
@@ -26,39 +29,61 @@ public class navControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(agent.velocity);
         if (this.gameObject.GetComponent<Renderer>().isVisible)
         {
             if (look.chase)
             {
-                Chase();
+                if (!awake)
+                {
+                    StartCoroutine(Wake());
+                }
+                else if (awake)
+                {
+                    Chase();
+
+                }
                 isWalking = true;
             }
             else if (!look.chase)
             {
                 //Freeze();
+                Chase();
                 isWalking = false;
             }
         }
         //CheckCast();
     }
 
+    IEnumerator Wake()
+    {
+        transform.LookAt(target.transform);
+        yield return new WaitForSeconds(3f);
+        Chase();
+    }
     void Chase()
     {
+        awake = true;
+
         if (isWalking)
         {
+            
             agent.stoppingDistance = 0f;
             agent.speed = 3f;
             agent.destination = target.transform.position;
+            agent.isStopped = false;
         }
         else
         {
             agent.stoppingDistance = 20f;
             agent.velocity = Vector3.zero;
+            rb.velocity = Vector3.zero;
             agent.speed = 0f;
-            agent.destination = this.transform.position;
+            agent.SetDestination(transform.position);
+            //agent.destination = this.transform.position;
+            agent.isStopped = true;
         }
-
-        this.transform.LookAt(target.transform);
+        transform.LookAt(target.transform);
     }
 
     /*
